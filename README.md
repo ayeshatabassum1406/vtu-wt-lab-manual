@@ -1,1 +1,1 @@
-# vtu-wt-lab-
+# vtu-wt-lab-manual
