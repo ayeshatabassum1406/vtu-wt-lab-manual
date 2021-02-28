@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="program5.css"?>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<h1>STUDENTS DESCRIPTION </h1>
+
+</head> 
+
+<students>
+	<student>
+	<USN>USN:1cg17ds001</USN>
+	<name>NAME:santosh</name>
+	<college>college:CIT</college>
+	<branch>BRANCH:CSE</branch>
+	<year>YEAR:2015</year>
+	<e-mail>E-mail:san@24</e-mail>
+
+	</student>
+
+	<student>
+	<USN>USN : 1CG15IS002</USN>
+	<name>NAME : MANORANJAN</name>
+	<college>COLLEGE : CITIT</college>
+	<branch>BRANCH : Information Science and Engineering</branch>
+	<year>YEAR : 2015</year>
+	<e-mail>E-Mail : manoranjan@gmail.com</e-mail>
+	</student>
+
+	<student>
+	<USN>USN : 1CG15EC101</USN>
+	<name>NAME : CHETHAN</name>
+	<college>COLLEGE : CITIT</college>
+	<branch>BRANCH : Electronics and Communication Engineering</branch>
+	<year>YEAR : 2015</year>
+	<e-mail>E-Mail : chethan@gmail.com</e-mail>
+	</student>
+
+</students>
+
+
+</html> 
