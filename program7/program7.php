@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>program 7</title>
-<meta http-equiv="refresh" content="1"/>
+<meta http-equiv="refresh" content="1"/> <!--refresh page contain every 1 second-->
 <style>
     p{
         color:white;
@@ -23,10 +23,10 @@
      <p><?php
 			date_default_timezone_set('Asia/Calcutta');
 
-            echo date("h :i:s A");
+            echo date("H:i:s A");
         ?>
     </p>
 </head>
 
 </html>
-</html>
+
