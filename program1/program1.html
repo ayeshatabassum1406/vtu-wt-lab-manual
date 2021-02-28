@@ -1,0 +1,89 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Experiment1</title>
+			<style> <!--css-->
+				table,th,td{
+								border:3px solid;
+								text-align:center;
+								background-color:skyblue;
+								margin:auto;
+			
+							}
+							table{
+							margin:auto;
+						
+							}
+							input{
+							text-align:center;
+							}
+		
+			</style>
+			
+			<script type="text/javascript">
+				function calc(clicked_id)
+				{
+					let val1=parseFloat(document.getElementById("value1").value);
+					let val2=parseFloat(document.getElementById("value2").value);
+					if(isNaN(val1)||isNaN(val2))//isNaN is not a number
+					 //if not number alerts the user
+					alert("please enter numbers only");
+					else if(clicked_id=="add")
+					document.getElementById("answer").value=val1+val2;
+					else if(clicked_id=="sub")
+					document.getElementById("answer").value=val1-val2;
+					else if(clicked_id=="mul")
+					document.getElementById("answer").value=val1*val2;
+					else if(clicked_id=="div")
+					{ 	if(val2!=0)
+							document.getElementById("answer").value=val1/val2;
+						else
+						{
+							alert("denominator cannot be zero");
+							location.reload();//after clicking ok page reloads
+						}
+					}
+				}
+				function cls()
+				{
+					value1.value="0";
+					value2.value="0";
+					answer.value="";
+				}
+			</script>
+		
+	</head>
+	
+	<body>
+	<table>
+	
+	<tr>
+	<th colspan="4">simple calculator</th> <!--colspan sepreates it into columns-->
+	</tr>
+	
+	<tr>
+		<td>enter operand1</td>
+		<td><input type="text" id="value1" value="0"></td>
+		<td>enter operand2</td>
+		<td><input type="text" id="value2" value="0"></td>
+	</tr>
+	
+	<tr>
+		<td>  <button onclick="calc(this.id)" id ="add" >sum(+)</button></td>
+		<td><input type="button" value="difference(-)" onclick="calc(this.id)" id="sub"></td>
+		<td><input type="button" value="product(*)" onclick="calc(this.id)" id="mul"></td>
+		<td><input type="button" value="quotient(/)" onclick="calc(this.id)" id="div"></td>
+	</tr>
+	
+	<tr>
+		<td>result:</td>
+		<td><input type="text" id="answer" value="" disabled></td> <!-- disabled makes user not to enetr values-->
+		<td colspan="2"><input type="button" value="clear all" id="cls" onclick="cls()"></td>
+	</tr>
+	
+	</table>
+	
+	
+	</body>
+	
+</html>
